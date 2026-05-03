@@ -1,4 +1,4 @@
-## Hi there 👋
+## Welcome to Masachi's Dev Circle. Code is a design tool.
 
 <!--
 **masachidc/masachidc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
