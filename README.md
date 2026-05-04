@@ -1,3 +1,4 @@
+<img width="1500" height="400" alt="Git Bio" src="https://github.com/user-attachments/assets/c2f7b87c-4c03-4bec-ad85-92a4e440c4d0" />
 ## Welcome to Masachi's Dev Circle. Code is a design tool.
 
 <!--
