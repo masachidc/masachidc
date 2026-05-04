@@ -4,7 +4,7 @@
 
 Code is a design tool.
 
-Please visit my portfolio site: https://masachidc.com/ 
+Please visit my portfolio site: masachidc.com
 
 <!--
 **masachidc/masachidc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
