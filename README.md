@@ -1,4 +1,4 @@
-<h1>
+<p>
   <a href="https://masachidc.com">
     <picture>
       <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/masthead-dark-narrow.svg">
@@ -7,9 +7,9 @@
       <img src="assets/masthead-light.svg" width="100%" alt="Nathan Masachi">
     </picture>
   </a>
-</h1>
+</p>
 
-### Product designer who ships.
+# Product designer who ships.
 
 I design products, build them, and put them in people's hands.
 
@@ -21,11 +21,9 @@ My background is in design, architecture, and computer science. I work across pr
 
 <a href="https://masachidc.com/works/tembo-app"><img src="assets/tembo.jpg" width="100%" alt="Three screens from the Tembo app on its yellow brand colour: onboarding that reads Create a Storyline for anything, a Persona with its Storylines, and Your Circle."></a>
 
-<samp>N°01 &nbsp;/&nbsp; FOUNDER &nbsp;/&nbsp; IOS + ANDROID &nbsp;/&nbsp; AUG 2026–NOW</samp>
+<samp>N°01 &nbsp;/&nbsp; Founder &nbsp;/&nbsp; iOS + Android &nbsp;/&nbsp; Aug 2026–now</samp>
 
-### Tembo
-
-**A social app built around ongoing experiences.**
+### Tembo — A social app built around ongoing experiences
 
 Most social apps are organized around people and posts. Tembo explores what happens when you organize them around ongoing experiences instead.
 
@@ -41,11 +39,9 @@ Beyond the interface, I've worked on everything from the database and media arch
 
 <a href="https://masachidc.com/works/kesho-app"><img src="assets/kesho.jpg" width="100%" alt="Three screens from the KESHO app on its green brand colour: a feed of graded predictions, a group leaderboard, and a profile with its call record."></a>
 
-<samp>N°02 &nbsp;/&nbsp; DESIGNER + BUILDER &nbsp;/&nbsp; MAR–JUN 2026 &nbsp;/&nbsp; DECOMMISSIONED</samp>
+<samp>N°02 &nbsp;/&nbsp; Designer + builder &nbsp;/&nbsp; Mar–Jun 2026 &nbsp;/&nbsp; Decommissioned</samp>
 
-### KESHO
-
-**Call it before kickoff. Prove it after the whistle.**
+### KESHO — Call it before kickoff. Prove it after the whistle.
 
 A social prediction app I designed and built for the 2026 World Cup.
 
@@ -59,13 +55,13 @@ I eventually shut KESHO down. The product taught me a great deal about building,
 
 ## Other work
 
-<samp>N°03 &nbsp;/&nbsp; PRODUCT DESIGN + UX RESEARCH &nbsp;/&nbsp; 2025</samp><br>
+<samp>N°03 &nbsp;/&nbsp; Product design + UX research &nbsp;/&nbsp; 2025</samp><br>
 **[AMUSE](https://masachidc.com/works/amuse-art-museum)**. A museum discovery and booking experience for Kenya. Research led me away from a native app toward a simpler web experience.
 
-<samp>N°04 &nbsp;/&nbsp; UX, FIVE-PERSON TEAM &nbsp;/&nbsp; 2026</samp><br>
+<samp>N°04 &nbsp;/&nbsp; UX &nbsp;/&nbsp; 2026</samp><br>
 **[Inline](https://masachidc.com/works/inline-chrome-extension)**. A Chrome extension for annotating webpages. I worked on UX in a five-person team. Awarded Most Unique Project at FIU Blackstone LaunchPad Demo Day.
 
-<samp>N°05 &nbsp;/&nbsp; BRAND IDENTITY &nbsp;/&nbsp; 2025</samp><br>
+<samp>N°05 &nbsp;/&nbsp; Brand identity + website &nbsp;/&nbsp; 2025</samp><br>
 **[Project SEEDS](https://masachidc.com/works/project-seeds-branding)**. A university-approved brand identity and website designed for a program at Florida International University.
 
 ---
