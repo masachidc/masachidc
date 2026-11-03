@@ -9,19 +9,19 @@ Small on purpose. Start from Masachi DC's tokens (`src/styles/theme.css` in the 
 | Ink | `#0a0a0b` | `#f5f5f7` | Name, node labels |
 | Muted | `#55555a` | `#a1a1a6` | Masthead metadata |
 | Web | Ink at up to 30% | Ink at up to 30% | Constellation lines |
-| Marks | `#768390` | `#768390` | Tech icons. One file: 4.0:1 on white, 4.8:1 on `#0d1117` |
 
 Text outside the artwork takes GitHub's own theme colours.
 
-**Project colours** appear only as a project's own node or cover ground, and only colours from the portfolio's `brands.ts`.
+**Project colours** appear only on a project's own node, cover ground and tool icons, and only colours from the portfolio's `brands.ts`.
 
-| Project | Node, light | Node, dark | Cover |
-| --- | --- | --- | --- |
-| Tembo | `#E0A800` | `#FFC829` | `#FFC829` |
-| KESHO | `#03401F` | `#0B7A3B` | `#0B7A3B` |
-| AMUSE | `#260101` | `#943B00` | None |
-| Inline | `#004B66` | `#007BA8` | None |
-| Project SEEDS | `#001047` | `#BF8400` | None |
+| Project | Node, light | Node, dark | Cover | Tool icons |
+| --- | --- | --- | --- | --- |
+| Tembo | `#E0A800` | `#FFC829` | `#FFC829` | `#E0A800` |
+| KESHO | `#03401F` | `#0B7A3B` | `#0B7A3B` | `#0B7A3B` |
+| AMUSE | `#260101` | `#943B00` | None | None |
+| Inline | `#004B66` | `#007BA8` | None | None |
+| Project SEEDS | `#001047` | `#BF8400` | None | None |
+| STEM Xposure | `#B8360F` | `#E4010D` | None | None |
 
 The site's sapphire accent stays out. In a README it would read as one more link colour.
 
@@ -33,7 +33,7 @@ The site's sapphire accent stays out. In a README it would read as one more link
 | Body | GitHub's own font | All reading copy, always real text |
 | Technical | `<samp>` and `<kbd>` natively. IBM Plex Mono 500, outlined, inside artwork | Labels, links, stacks, masthead metadata |
 
-Heading order is `h1` statement, `h2` section, `h3` project.
+A README can only set size through heading levels, so the scale is: `h1` statement 28px, `h2` project title 21px, `h3` supporting project 17.5px, body 14px. Section names are quiet bold `<samp>` labels, so they don't compete with project titles.
 
 ## Labels and links
 
@@ -46,8 +46,8 @@ Heading order is `h1` statement, `h2` section, `h3` project.
 
 | Asset | Size | Ratio | Shown |
 | --- | --- | --- | --- |
-| `masthead-{light,dark}.svg` | 1400 × 520 viewBox | 2.69:1 | All widths |
-| `{project}.jpg` | 1660 × 920 | 1.8:1 | Three screens, windows above 900px |
+| `masthead-{light,dark}.svg` | 846 × 372 viewBox | 2.27:1 | All widths |
+| `{project}-cover.jpg` | 1660 × 920 | 1.8:1 | Three screens, windows above 900px |
 | `{project}-narrow.jpg` | 1200 × 1180 | 1.02:1 | Two larger screens, windows 900px and below |
 
 - Covers: flat brand ground, 60px margin, name top left, middle screen raised, screens running off the bottom. Square corners, as on the site.
@@ -61,9 +61,15 @@ Heading order is `h1` statement, `h2` section, `h3` project.
 - `<br>` between the two features. `h2` rules between sections. One `---` before the closing line.
 - Supporting work is text only, which is what separates it from the features.
 
+## The constellation
+
+`design/constellation.mjs` ports `ProjectConstellation.tsx` from the portfolio: same seed, positions, chains and rules, so the web matches the site. If the site's projects change, update `PROJECTS` there too.
+
+An SVG shown as a README image can animate with CSS but can't respond to a pointer. So the entrance and the far plane's float carry over, the hover state plays as a slow cycle through the projects, and per-node links and pointer drift are left out. Reduced-motion viewers and anything without CSS animation get the complete, still figure.
+
 ## Icons
 
-Monochrome Simple Icons at 12px in a `<kbd>` chip with a real-text name. `alt=""`, because the name beside it says what it is. Each mark links to the tool's site, which also stops GitHub linking it to the raw file.
+Simple Icons at 12px, in the project's colour, in a `<kbd>` chip with a real-text name. `alt=""`, because the name beside it says what it is. Each mark links to the tool's site, which also stops GitHub linking it to the raw file.
 
 ## Responsive and theme rules
 
@@ -90,4 +96,4 @@ npm ci
 FONT_DIR=/path/to/masachi-dc-portfolio/public/fonts npm run build
 ```
 
-`FONT_DIR` defaults to a sibling `masachi-dc-portfolio` checkout. Cabinet Grotesk (Fontshare, ITF Free Font License) comes from there because no font files live in this repo. IBM Plex Mono (OFL) comes from npm. Generated SVGs contain outlines only, with no scripts or external references. Same inputs, same files.
+`FONT_DIR` defaults to a sibling `masachi-dc-portfolio` checkout. Cabinet Grotesk (Fontshare, ITF Free Font License) comes from there because no font files live in this repo. IBM Plex Mono (OFL) comes from npm. Generated SVGs contain outlines and CSS only, with no scripts or external references. Same inputs, same files.

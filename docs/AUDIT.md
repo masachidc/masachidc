@@ -74,6 +74,14 @@ From rendered screenshots at the profile's real width, beside the sidebar:
 - **Web lines crossed masthead labels.** The web now routes around them, as on the site.
 - **Removed:** the old side-by-side cards, a planned footer mesh and a planned supporting-work image strip. Neither of the last two added anything the text doesn't already do.
 
+After launch, on review:
+
+- **Name too large.** Reduced from about 118px to 76px, and the figure given the room.
+- **Project titles nearly body size.** Moved up to `h2`, with section names as quiet labels.
+- **Grey tool icons.** Now in each project's colour.
+- **Hand-placed constellation.** Replaced with a port of the site's own.
+- **Stale covers.** Reusing filenames left the old image in caches, so covers now have new names. Don't reuse an image's filename with different art.
+
 ## Outside the README
 
 These are account settings. Nothing here has been changed.
@@ -102,8 +110,9 @@ These are account settings. Nothing here has been changed.
 
 ## Limitations
 
-- A profile README renders from the default branch, so this branch can't appear on github.com/masachidc until merged. Review used GitHub's real render of the branch, placed into the live profile page.
+- Branches can't appear on github.com/masachidc until merged. Review used GitHub's real render of the branch, placed into the live profile page.
 - The GitHub mobile app and forced-theme accounts couldn't be opened directly. Forced themes were reasoned from GitHub's shipped script.
-- Masthead labels shrink to texture on phones (about 5px). The same names appear in real text below.
+- Masthead labels shrink to texture on phones (about 5px). Most of the same names appear in real text below. STEM Xposure appears only in the constellation, as on the site's homepage.
+- The constellation can't respond to hover or link each node, because GitHub shows SVGs as images. The whole masthead links to the portfolio.
 - The KESHO cover shows beta players' display names on its leaderboard, as the portfolio's cover already does.
 - Technology marks belong to their owners and are used only to identify the tools.
