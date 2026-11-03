@@ -33,11 +33,11 @@ The site's sapphire accent stays out. In a README it would read as one more link
 | Body | GitHub's own font | All reading copy, always real text |
 | Technical | `<samp>` and `<kbd>` natively. IBM Plex Mono 500, outlined, inside artwork | Labels, links, stacks, masthead metadata |
 
-A README can only set size through heading levels, so the scale is: `h1` statement 28px, `h2` project title 21px, `h3` supporting project 17.5px, body 14px. Section names are quiet bold `<samp>` labels, so they don't compete with project titles.
+A README can only set size through heading levels, so the scale is: `h1` statement 28px, `h2` project title 21px, body 14px. "Selected work" is a quiet bold `<samp>` label, so it doesn't compete with project titles.
 
 ## Labels and links
 
-- Project label: `N°01 / Founder / iOS + Android / Aug 2026–now`. Number, role, platform or discipline, then dates and status.
+- Project label: `N°01 / Founder / iOS + Android / Aug 2026–Present`. Number, role, platform or discipline, then dates and status.
 - Sentence case, so "iOS" stays correct. Numbers follow display order.
 - Non-breaking inside an item (`&nbsp;`), a normal space after each slash, so lines break only between items.
 - Link rows are `<samp>` with the same slash.
@@ -58,8 +58,8 @@ A README can only set size through heading levels, so the scale is: `h1` stateme
 
 - One column. Full-width images, no layout tables. GitHub gives no reliable asymmetry, so contrast comes from scale: display name, full-bleed colour, small mono.
 - A feature runs cover, label, heading, copy, stack, links.
-- `<br>` between the two features. `h2` rules between sections. One `---` before the closing line.
-- Supporting work is text only, which is what separates it from the features.
+- `<br>` between the two features. One `---` before the closing line.
+- The README features Tembo and KESHO only. The constellation and the portfolio carry the rest.
 
 ## The constellation
 
@@ -80,8 +80,6 @@ Simple Icons at 12px, in the project's colour, in a `<kbd>` chip with a real-tex
 ## Maintaining it
 
 **Edit copy, a project's text or a link:** change `README.md` only.
-
-**Add supporting work:** copy a `N°` block under "Other work". No assets needed.
 
 **Add a feature, change a cover or add an icon:**
 

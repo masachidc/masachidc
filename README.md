@@ -19,7 +19,7 @@ My background is in design, architecture, and computer science. I work across pr
 
 <a href="https://masachidc.com/works/tembo-app"><picture><source media="(max-width: 900px)" srcset="assets/tembo-narrow.jpg"><img src="assets/tembo-cover.jpg" width="100%" alt="Three screens from the Tembo app on its yellow brand colour: onboarding that reads Create a Storyline for anything, a Persona with its Storylines, and Your Circle."></picture></a>
 
-<samp>N°01 / Founder / iOS&nbsp;+&nbsp;Android / Aug&nbsp;2026–now</samp>
+<samp>N°01 / Founder / iOS&nbsp;+&nbsp;Android / Aug&nbsp;2026–Present</samp>
 
 ## TEMBO — A social app built around ongoing experiences
 
@@ -50,28 +50,6 @@ I eventually shut KESHO down. The product taught me a great deal about building,
 <kbd><a href="https://nextjs.org"><img src="assets/icons/kesho/nextdotjs.svg" height="12" alt=""></a> Next.js</kbd> <kbd><a href="https://www.typescriptlang.org"><img src="assets/icons/kesho/typescript.svg" height="12" alt=""></a> TypeScript</kbd> <kbd><a href="https://supabase.com"><img src="assets/icons/kesho/supabase.svg" height="12" alt=""></a> Supabase</kbd> <kbd><a href="https://capacitorjs.com"><img src="assets/icons/kesho/capacitor.svg" height="12" alt=""></a> Capacitor</kbd>
 
 <samp>[Case&nbsp;study](https://masachidc.com/works/kesho-app)</samp>
-
-<br>
-
-<samp><b>Other work</b></samp>
-
-### [AMUSE](https://masachidc.com/works/amuse-art-museum)
-
-<samp>N°03 / Product&nbsp;design&nbsp;+&nbsp;UX&nbsp;research / 2025</samp>
-
-A museum discovery and booking experience for Kenya. Research led me away from a native app toward a simpler web experience.
-
-### [Inline](https://masachidc.com/works/inline-chrome-extension)
-
-<samp>N°04 / UX / 2026</samp>
-
-A Chrome extension for annotating webpages. I worked on UX in a five-person team. Awarded Most Unique Project at FIU Blackstone LaunchPad Demo Day.
-
-### [Project SEEDS](https://masachidc.com/works/project-seeds-branding)
-
-<samp>N°05 / Brand&nbsp;identity&nbsp;+&nbsp;website / 2025</samp>
-
-A university-approved brand identity and website designed for a program at Florida International University.
 
 ---
 

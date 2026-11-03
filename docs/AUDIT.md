@@ -80,6 +80,7 @@ After launch, on review:
 - **Project titles nearly body size.** Moved up to `h2`, with section names as quiet labels.
 - **Grey tool icons.** Now in each project's colour.
 - **Hand-placed constellation.** Replaced with a port of the site's own.
+- **"Other work" removed.** The page now features Tembo and KESHO only.
 - **Stale covers.** Reusing filenames left the old image in caches, so covers now have new names. Don't reuse an image's filename with different art.
 
 ## Outside the README
@@ -112,7 +113,7 @@ These are account settings. Nothing here has been changed.
 
 - Branches can't appear on github.com/masachidc until merged. Review used GitHub's real render of the branch, placed into the live profile page.
 - The GitHub mobile app and forced-theme accounts couldn't be opened directly. Forced themes were reasoned from GitHub's shipped script.
-- Masthead labels shrink to texture on phones (about 5px). Most of the same names appear in real text below. STEM Xposure appears only in the constellation, as on the site's homepage.
+- Masthead labels shrink to texture on phones (about 5px). AMUSE, Inline, Project SEEDS and STEM Xposure now appear only there, so phone visitors reach them through the portfolio.
 - The constellation can't respond to hover or link each node, because GitHub shows SVGs as images. The whole masthead links to the portfolio.
 - The KESHO cover shows beta players' display names on its leaderboard, as the portfolio's cover already does.
 - Technology marks belong to their owners and are used only to identify the tools.
