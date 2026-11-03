@@ -1,8 +1,6 @@
 <p>
   <a href="https://masachidc.com">
     <picture>
-      <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/masthead-dark-narrow.svg">
-      <source media="(prefers-color-scheme: light) and (max-width: 640px)" srcset="assets/masthead-light-narrow.svg">
       <source media="(prefers-color-scheme: dark)" srcset="assets/masthead-dark.svg">
       <img src="assets/masthead-light.svg" width="100%" alt="Nathan Masachi">
     </picture>

@@ -57,7 +57,7 @@ const seeded = (seed) => () => {
 const n = (v) => Math.round(v * 10) / 10;
 
 /** The portfolio's star chart, redrawn for a fixed frame: a fading web with the projects as its brightest nodes. */
-function constellation({ box, stars, chains, tails, theme, labels, seed = 7 }) {
+function constellation({ box, stars, chains, tails, theme, seed = 7 }) {
   const t = THEME[theme];
   const random = seeded(seed);
   const cx = box.x + box.w / 2;
@@ -108,17 +108,15 @@ function constellation({ box, stars, chains, tails, theme, labels, seed = 7 }) {
     return `<path d="M${s.x} ${s.y}L${x} ${y}" stroke-opacity="0.34"/>`;
   });
   const nodes = Object.entries(stars).map(
-    ([key, s]) => `<circle cx="${s.x}" cy="${s.y}" r="${labels ? 9 : 11}" fill="${t.nodes[key]}"/>`,
+    ([key, s]) => `<circle cx="${s.x}" cy="${s.y}" r="9" fill="${t.nodes[key]}"/>`,
   );
-  const names = labels
-    ? Object.values(stars).map((s) =>
-        outline(mono, s.name, s.x + (s.anchor === 'end' ? -16 : 16), s.y + (s.dy ?? 8), 22, {
-          fill: t.ink,
-          tracking: 0.06,
-          anchor: s.anchor ?? 'start',
-        }),
-      )
-    : [];
+  const names = Object.values(stars).map((s) =>
+    outline(mono, s.name, s.x + (s.anchor === 'end' ? -16 : 16), s.y + (s.dy ?? 8), 22, {
+      fill: t.ink,
+      tracking: 0.06,
+      anchor: s.anchor ?? 'start',
+    }),
+  );
 
   return [
     `<g fill="none" stroke="${t.web}" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">${web.join('')}${loose.join('')}${figure.join('')}</g>`,
@@ -128,67 +126,43 @@ function constellation({ box, stars, chains, tails, theme, labels, seed = 7 }) {
   ].join('');
 }
 
-function masthead(theme, wide) {
+function masthead(theme) {
   const t = THEME[theme];
-  const W = wide ? 1660 : 1020;
-  const H = wide ? 560 : 600;
-  const size = wide ? 208 : 200;
+  const W = 1660;
+  const H = 560;
+  const size = 208;
   const leading = size * 0.92;
   const base = H - 30;
-  const stars = wide
-    ? {
-        tembo: { x: 930, y: 268, name: 'TEMBO', anchor: 'end', dy: -14 },
-        kesho: { x: 1110, y: 156, name: 'KESHO', dy: -18 },
-        amuse: { x: 1352, y: 122, name: 'AMUSE', dy: -18 },
-        inline: { x: 1560, y: 310, name: 'INLINE', anchor: 'end', dy: 38 },
-        seeds: { x: 1220, y: 452, name: 'PROJECT SEEDS', dy: 38 },
-      }
-    : {
-        tembo: { x: 500, y: 150 },
-        kesho: { x: 640, y: 84 },
-        amuse: { x: 840, y: 112 },
-        inline: { x: 950, y: 330 },
-        seeds: { x: 760, y: 240 },
-      };
-  const chains = wide
-    ? [
-        ['tembo', { x: 1006, y: 196 }, 'kesho', { x: 1236, y: 104 }, 'amuse'],
-        ['seeds', { x: 1056, y: 372 }, 'tembo'],
-      ]
-    : [
-        ['tembo', { x: 568, y: 92 }, 'kesho', { x: 752, y: 60 }, 'amuse'],
-        ['seeds', { x: 620, y: 206 }, 'tembo'],
-      ];
-  const tails = wide
-    ? [
-        { from: 'inline', x: 1470, y: 216 },
-        { from: 'inline', x: 1612, y: 200 },
-        { from: 'inline', x: 1460, y: 410 },
-        { from: 'amuse', x: 1480, y: 60 },
-        { from: 'seeds', x: 1380, y: 500 },
-      ]
-    : [
-        { from: 'inline', x: 860, y: 250 },
-        { from: 'inline', x: 1000, y: 230 },
-        { from: 'amuse', x: 970, y: 50 },
-      ];
-  const box = wide ? { x: 800, y: 40, w: 860, h: 500 } : { x: 380, y: 16, w: 640, h: 370 };
-  const metaY = wide ? 34 : 46;
-  const metaSize = wide ? 22 : 30;
+  const stars = {
+    tembo: { x: 930, y: 268, name: 'TEMBO', anchor: 'end', dy: -14 },
+    kesho: { x: 1110, y: 156, name: 'KESHO', dy: -18 },
+    amuse: { x: 1352, y: 122, name: 'AMUSE', dy: -18 },
+    inline: { x: 1560, y: 310, name: 'INLINE', anchor: 'end', dy: 38 },
+    seeds: { x: 1220, y: 452, name: 'PROJECT SEEDS', dy: 38 },
+  };
+  const chains = [
+    ['tembo', { x: 1006, y: 196 }, 'kesho', { x: 1236, y: 104 }, 'amuse'],
+    ['seeds', { x: 1056, y: 372 }, 'tembo'],
+  ];
+  const tails = [
+    { from: 'inline', x: 1470, y: 216 },
+    { from: 'inline', x: 1612, y: 200 },
+    { from: 'inline', x: 1460, y: 410 },
+    { from: 'amuse', x: 1480, y: 60 },
+    { from: 'seeds', x: 1380, y: 500 },
+  ];
+  const box = { x: 800, y: 40, w: 860, h: 500 };
   const body = [
-    constellation({ box, stars, chains, tails, theme, labels: wide }),
-    outline(mono, 'MASACHI DC', 0, metaY, metaSize, { fill: t.muted, tracking: 0.08 }),
-    wide ? outline(mono, '32.72N 117.16W', W, metaY, metaSize, { fill: t.muted, tracking: 0.08, anchor: 'end' }) : '',
+    constellation({ box, stars, chains, tails, theme }),
+    outline(mono, 'MASACHI DC', 0, 34, 22, { fill: t.muted, tracking: 0.08 }),
+    outline(mono, '32.72N 117.16W', W, 34, 22, { fill: t.muted, tracking: 0.08, anchor: 'end' }),
     outline(display, 'Nathan', -4, base - leading, size, { fill: t.ink, tracking: -0.02 }),
     outline(display, 'Masachi', -4, base, size, { fill: t.ink, tracking: -0.02 }),
   ].join('');
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W / 2}" height="${H / 2}" role="img" aria-label="Nathan Masachi">${body}</svg>\n`;
 }
 
-for (const theme of ['light', 'dark']) {
-  writeFileSync(join(out, `masthead-${theme}.svg`), masthead(theme, true));
-  writeFileSync(join(out, `masthead-${theme}-narrow.svg`), masthead(theme, false));
-}
+for (const theme of ['light', 'dark']) writeFileSync(join(out, `masthead-${theme}.svg`), masthead(theme));
 
 /** A real screen in a thin device frame. Screens are never redrawn, only placed and cropped by the cover's edge. */
 async function phone(file, width) {
