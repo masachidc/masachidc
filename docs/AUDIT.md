@@ -81,7 +81,7 @@ After launch, on review:
 - **Grey tool icons.** Now in each project's colour.
 - **Hand-placed constellation.** Replaced with a port of the site's own.
 - **"Other work" removed.** The page now features Tembo and KESHO only.
-- **Stale covers.** Reusing filenames left the old image in caches, so covers now have new names. Don't reuse an image's filename with different art.
+- **Stale covers.** Reusing filenames left the old image in caches, so covers and the masthead now have new names. Don't reuse an image's filename with different art.
 
 ## Outside the README
 

@@ -46,7 +46,7 @@ A README can only set size through heading levels, so the scale is: `h1` stateme
 
 | Asset | Size | Ratio | Shown |
 | --- | --- | --- | --- |
-| `masthead-{light,dark}.svg` | 846 × 372 viewBox | 2.27:1 | All widths |
+| `name-constellation-{light,dark}.svg` | 846 × 372 viewBox | 2.27:1 | All widths |
 | `{project}-cover.jpg` | 1660 × 920 | 1.8:1 | Three screens, windows above 900px |
 | `{project}-narrow.jpg` | 1200 × 1180 | 1.02:1 | Two larger screens, windows 900px and below |
 

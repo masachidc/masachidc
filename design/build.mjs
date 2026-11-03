@@ -73,7 +73,7 @@ function masthead(theme) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Nathan Masachi">${body}</svg>\n`;
 }
 
-for (const theme of ['light', 'dark']) writeFileSync(join(out, `masthead-${theme}.svg`), masthead(theme));
+for (const theme of ['light', 'dark']) writeFileSync(join(out, `name-constellation-${theme}.svg`), masthead(theme));
 
 /** A real screen in a thin device frame. Screens are never redrawn, only placed and cropped by the cover's edge. */
 async function phone(file, width) {
