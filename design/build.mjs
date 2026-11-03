@@ -73,6 +73,16 @@ function constellation({ box, stars, chains, tails, theme, seed = 7 }) {
     }
   }
 
+  const labelBoxes = Object.values(stars).map((s) => {
+    const width = mono.getAdvanceWidth(s.name, 22, { letterSpacing: 0.06 });
+    const x = s.x + (s.anchor === 'end' ? -16 - width : 16);
+    const y = s.y + (s.dy ?? 8);
+    return { left: x - 10, right: x + width + 10, top: y - 26, bottom: y + 10 };
+  });
+  const inLabel = (x, y) => labelBoxes.some((b) => x > b.left && x < b.right && y > b.top && y < b.bottom);
+  const crossesLabel = (p, q) =>
+    Array.from({ length: 21 }, (_, i) => i / 20).some((f) => inLabel(p.x + (q.x - p.x) * f, p.y + (q.y - p.y) * f));
+
   const seen = new Set();
   const web = [];
   points.forEach((p, i) => {
@@ -86,11 +96,12 @@ function constellation({ box, stars, chains, tails, theme, seed = 7 }) {
         if (seen.has(key)) return;
         seen.add(key);
         const q = points[j];
+        if (crossesLabel(p, q)) return;
         const o = fade((p.x + q.x) / 2, (p.y + q.y) / 2) * 0.3;
         web.push(`<path d="M${n(p.x)} ${n(p.y)}L${n(q.x)} ${n(q.y)}" stroke-opacity="${o.toFixed(2)}"/>`);
       });
   });
-  const dots = points.map((p) => {
+  const dots = points.filter((p) => !inLabel(p.x, p.y)).map((p) => {
     const o = fade(p.x, p.y) * 0.6;
     return `<circle cx="${n(p.x)}" cy="${n(p.y)}" r="2" fill-opacity="${o.toFixed(2)}"/>`;
   });
@@ -135,7 +146,7 @@ function masthead(theme) {
   const base = H - 26;
   const stars = {
     tembo: { x: 770, y: 250, name: 'TEMBO', anchor: 'end', dy: -14 },
-    kesho: { x: 910, y: 150, name: 'KESHO', dy: -18 },
+    kesho: { x: 910, y: 150, name: 'KESHO', dy: 34 },
     amuse: { x: 1120, y: 112, name: 'AMUSE', dy: -18 },
     inline: { x: 1330, y: 290, name: 'INLINE', anchor: 'end', dy: 38 },
     seeds: { x: 1020, y: 430, name: 'PROJECT SEEDS', dy: 38 },
@@ -147,9 +158,9 @@ function masthead(theme) {
   const tails = [
     { from: 'inline', x: 1250, y: 200 },
     { from: 'inline', x: 1380, y: 190 },
-    { from: 'inline', x: 1240, y: 390 },
-    { from: 'amuse', x: 1250, y: 50 },
-    { from: 'seeds', x: 1160, y: 480 },
+    { from: 'inline', x: 1385, y: 400 },
+    { from: 'amuse', x: 1260, y: 150 },
+    { from: 'seeds', x: 1170, y: 400 },
   ];
   const box = { x: 690, y: 30, w: 710, h: 470 };
   const body = [

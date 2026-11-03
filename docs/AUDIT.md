@@ -68,9 +68,10 @@ From rendered screenshots at the profile's real width, beside the sidebar:
 - **Three small stacked lines per project** (label, title, tagline). Merged into your original "Tembo — ..." heading.
 - **Capitals made "IOS" wrong.** Labels moved to sentence case.
 - **Forced themes broke the phone masthead.** Removed the width-based theme variants.
-- **Phone name too small** at 30px cap height. Tightened the masthead's frame so it's larger everywhere.
-- **Phones 87px wide on mobile.** Added two-screen phone covers, now 128px wide.
+- **Phone name too small.** Tightened the masthead's frame so it's larger everywhere.
+- **Phones 87px wide on mobile.** Added two-screen covers for narrow windows, about 130px wide per phone on a phone. They also apply up to 900px, where GitHub's sidebar squeezes the README.
 - **Labels and links broke mid-item, and icons were orphaned from names.** Non-breaking text inside items, `<kbd>` for stacks.
+- **Web lines crossed masthead labels.** The web now routes around them, as on the site.
 - **Removed:** the old side-by-side cards, a planned footer mesh and a planned supporting-work image strip. Neither of the last two added anything the text doesn't already do.
 
 ## Outside the README

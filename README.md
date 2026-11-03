@@ -17,7 +17,7 @@ My background is in design, architecture, and computer science. I work across pr
 
 ## Selected work
 
-<a href="https://masachidc.com/works/tembo-app"><picture><source media="(max-width: 640px)" srcset="assets/tembo-narrow.jpg"><img src="assets/tembo.jpg" width="100%" alt="Three screens from the Tembo app on its yellow brand colour: onboarding that reads Create a Storyline for anything, a Persona with its Storylines, and Your Circle."></picture></a>
+<a href="https://masachidc.com/works/tembo-app"><picture><source media="(max-width: 900px)" srcset="assets/tembo-narrow.jpg"><img src="assets/tembo.jpg" width="100%" alt="Three screens from the Tembo app on its yellow brand colour: onboarding that reads Create a Storyline for anything, a Persona with its Storylines, and Your Circle."></picture></a>
 
 <samp>N°01 / Founder / iOS&nbsp;+&nbsp;Android / Aug&nbsp;2026–now</samp>
 
@@ -35,7 +35,7 @@ Beyond the interface, I've worked on everything from the database and media arch
 
 <br>
 
-<a href="https://masachidc.com/works/kesho-app"><picture><source media="(max-width: 640px)" srcset="assets/kesho-narrow.jpg"><img src="assets/kesho.jpg" width="100%" alt="Three screens from the KESHO app on its green brand colour: a feed of graded predictions, a group leaderboard, and a profile with its call record."></picture></a>
+<a href="https://masachidc.com/works/kesho-app"><picture><source media="(max-width: 900px)" srcset="assets/kesho-narrow.jpg"><img src="assets/kesho.jpg" width="100%" alt="Three screens from the KESHO app on its green brand colour: a feed of graded predictions, a group leaderboard, and a profile with its call record."></picture></a>
 
 <samp>N°02 / Designer&nbsp;+&nbsp;builder / Mar–Jun&nbsp;2026 / Decommissioned</samp>
 

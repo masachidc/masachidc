@@ -47,8 +47,8 @@ Heading order is `h1` statement, `h2` section, `h3` project.
 | Asset | Size | Ratio | Shown |
 | --- | --- | --- | --- |
 | `masthead-{light,dark}.svg` | 1400 × 520 viewBox | 2.69:1 | All widths |
-| `{project}.jpg` | 1660 × 920 | 1.8:1 | Three screens, above 640px |
-| `{project}-narrow.jpg` | 1200 × 1180 | 1.02:1 | Two larger screens, 640px and below |
+| `{project}.jpg` | 1660 × 920 | 1.8:1 | Three screens, windows above 900px |
+| `{project}-narrow.jpg` | 1200 × 1180 | 1.02:1 | Two larger screens, windows 900px and below |
 
 - Covers: flat brand ground, 60px margin, name top left, middle screen raised, screens running off the bottom. Square corners, as on the site.
 - Screens are real recordings or screenshots, never redrawn.
@@ -68,7 +68,7 @@ Monochrome Simple Icons at 12px in a `<kbd>` chip with a real-text name. `alt=""
 ## Responsive and theme rules
 
 - Theme: one `<source media="(prefers-color-scheme: dark)">` plus a light `<img>`. Never add another condition to a theme source (see `AUDIT.md`).
-- Width: `<source media="(max-width: 640px)">` only on images with no theme variants.
+- Width: `<source media="(max-width: 900px)">` only on images with no theme variants.
 - Cover art must not depend on the theme.
 
 ## Maintaining it
