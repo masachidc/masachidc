@@ -65,7 +65,7 @@ function constellation({ box, stars, chains, tails, theme, seed = 7 }) {
   const fade = (x, y) => Math.max(0, 1 - Math.hypot((x - cx) / (box.w * 0.54), (y - cy) / (box.h * 0.62)) ** 2.2);
 
   const points = [];
-  const step = 62;
+  const step = 58;
   for (let gy = box.y; gy <= box.y + box.h; gy += step) {
     for (let gx = box.x; gx <= box.x + box.w; gx += step) {
       const p = { x: gx + (random() - 0.5) * step * 0.9, y: gy + (random() - 0.5) * step * 0.9 };
@@ -128,30 +128,30 @@ function constellation({ box, stars, chains, tails, theme, seed = 7 }) {
 
 function masthead(theme) {
   const t = THEME[theme];
-  const W = 1660;
-  const H = 560;
-  const size = 208;
+  const W = 1400;
+  const H = 520;
+  const size = 196;
   const leading = size * 0.92;
-  const base = H - 30;
+  const base = H - 26;
   const stars = {
-    tembo: { x: 930, y: 268, name: 'TEMBO', anchor: 'end', dy: -14 },
-    kesho: { x: 1110, y: 156, name: 'KESHO', dy: -18 },
-    amuse: { x: 1352, y: 122, name: 'AMUSE', dy: -18 },
-    inline: { x: 1560, y: 310, name: 'INLINE', anchor: 'end', dy: 38 },
-    seeds: { x: 1220, y: 452, name: 'PROJECT SEEDS', dy: 38 },
+    tembo: { x: 770, y: 250, name: 'TEMBO', anchor: 'end', dy: -14 },
+    kesho: { x: 910, y: 150, name: 'KESHO', dy: -18 },
+    amuse: { x: 1120, y: 112, name: 'AMUSE', dy: -18 },
+    inline: { x: 1330, y: 290, name: 'INLINE', anchor: 'end', dy: 38 },
+    seeds: { x: 1020, y: 430, name: 'PROJECT SEEDS', dy: 38 },
   };
   const chains = [
-    ['tembo', { x: 1006, y: 196 }, 'kesho', { x: 1236, y: 104 }, 'amuse'],
-    ['seeds', { x: 1056, y: 372 }, 'tembo'],
+    ['tembo', { x: 830, y: 190 }, 'kesho', { x: 1020, y: 92 }, 'amuse'],
+    ['seeds', { x: 880, y: 350 }, 'tembo'],
   ];
   const tails = [
-    { from: 'inline', x: 1470, y: 216 },
-    { from: 'inline', x: 1612, y: 200 },
-    { from: 'inline', x: 1460, y: 410 },
-    { from: 'amuse', x: 1480, y: 60 },
-    { from: 'seeds', x: 1380, y: 500 },
+    { from: 'inline', x: 1250, y: 200 },
+    { from: 'inline', x: 1380, y: 190 },
+    { from: 'inline', x: 1240, y: 390 },
+    { from: 'amuse', x: 1250, y: 50 },
+    { from: 'seeds', x: 1160, y: 480 },
   ];
-  const box = { x: 800, y: 40, w: 860, h: 500 };
+  const box = { x: 690, y: 30, w: 710, h: 470 };
   const body = [
     constellation({ box, stars, chains, tails, theme }),
     outline(mono, 'MASACHI DC', 0, 34, 22, { fill: t.muted, tracking: 0.08 }),
@@ -190,22 +190,21 @@ async function phone(file, width) {
     .toBuffer();
 }
 
-/** A project cover: the brand's own colour, its name, and three real screens running off the bottom edge. */
-async function cover({ slug, name, ground, ink, screens, tops }) {
-  const W = 1660;
-  const H = 920;
-  const margin = 60;
-  const width = 470;
-  const gap = (W - margin * 2 - width * 3) / 2;
+/**
+ * A project cover: the brand's own colour, its name, and real screens running off the bottom edge. Wide shows three
+ * screens; narrow shows two, larger, for phones.
+ */
+async function cover({ file, name, ground, ink, screens, tops, W, H, margin, width, nameSize, nameY }) {
+  const gap = (W - margin * 2 - width * screens.length) / (screens.length - 1);
   const type = Buffer.from(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">${outline(display, name, margin - 6, 170, 190, {
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">${outline(display, name, margin - 6, nameY, nameSize, {
       fill: ink,
       tracking: -0.02,
     })}</svg>`,
   );
   const layers = [{ input: type, left: 0, top: 0 }];
-  for (const [i, file] of screens.entries()) {
-    const shot = await phone(file, width);
+  for (const [i, screen] of screens.entries()) {
+    const shot = await phone(screen, width);
     const top = tops[i];
     const visible = await sharp(shot)
       .extract({ left: 0, top: 0, width, height: H - top })
@@ -215,25 +214,19 @@ async function cover({ slug, name, ground, ink, screens, tops }) {
   await sharp({ create: { width: W, height: H, channels: 3, background: ground } })
     .composite(layers)
     .jpeg({ quality: 84, mozjpeg: true, chromaSubsampling: '4:4:4' })
-    .toFile(join(out, `${slug}.jpg`));
+    .toFile(join(out, file));
 }
 
-await cover({
-  slug: 'tembo',
-  name: 'TEMBO',
-  ground: '#FFC829',
-  ink: '#0a0a0b',
-  screens: ['onboarding-2-480.webp', 'hero-persona-poster.webp', 'hero-circle-poster.webp'],
-  tops: [310, 220, 310],
-});
-await cover({
-  slug: 'kesho',
-  name: 'KESHO',
-  ground: '#0B7A3B',
-  ink: '#ffffff',
-  screens: ['hero-feed.webp', 'hero-leaderboard.webp', 'hero-profile.webp'],
-  tops: [310, 220, 310],
-});
+const WIDE = { W: 1660, H: 920, margin: 60, width: 470, nameSize: 190, nameY: 170, tops: [310, 220, 310] };
+const NARROW = { W: 1200, H: 1180, margin: 60, width: 510, nameSize: 190, nameY: 180, tops: [350, 260] };
+
+const TEMBO = { name: 'TEMBO', ground: '#FFC829', ink: '#0a0a0b' };
+await cover({ ...TEMBO, ...WIDE, file: 'tembo.jpg', screens: ['onboarding-2-480.webp', 'hero-persona-poster.webp', 'hero-circle-poster.webp'] });
+await cover({ ...TEMBO, ...NARROW, file: 'tembo-narrow.jpg', screens: ['onboarding-2-480.webp', 'hero-persona-poster.webp'] });
+
+const KESHO = { name: 'KESHO', ground: '#0B7A3B', ink: '#ffffff' };
+await cover({ ...KESHO, ...WIDE, file: 'kesho.jpg', screens: ['hero-feed.webp', 'hero-leaderboard.webp', 'hero-profile.webp'] });
+await cover({ ...KESHO, ...NARROW, file: 'kesho-narrow.jpg', screens: ['hero-feed.webp', 'hero-leaderboard.webp'] });
 
 // Technology marks (Simple Icons, CC0), one mid grey that holds at least 3:1 on both GitHub canvases, so one file
 // serves both themes.
