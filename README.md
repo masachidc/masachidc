@@ -1,6 +1,6 @@
 # Nathan Masachi
 
-## Product designer who ships.
+### Product designer who ships.
 
 I design products, build them, and put them in people's hands.
 
