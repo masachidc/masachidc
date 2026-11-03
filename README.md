@@ -10,8 +10,8 @@ Based in San Diego, California.
 
 [Portfolio](https://masachidc.com) · [LinkedIn](https://www.linkedin.com/in/nathanmasachi/) · [Email](mailto:hello@masachidc.com)
 
-<a href="https://masachidc.com/works/tembo-app"><img src="assets/tembo.jpg" width="49%" alt="Tembo: three app screens, a Persona, Your Circle and the Home feed"></a>
-<a href="https://masachidc.com/works/kesho-app"><img src="assets/kesho.jpg" width="49%" alt="KESHO: three app screens, a feed of graded predictions, a group leaderboard and a profile"></a>
+<a href="https://masachidc.com/works/tembo-app"><img src="assets/tembo-card.jpg" width="49%" alt="Tembo: three app screens, a Persona, Your Circle and the Home feed"></a>
+<a href="https://masachidc.com/works/kesho-app"><img src="assets/kesho-card.jpg" width="49%" alt="KESHO: three app screens, a feed of graded predictions, a group leaderboard and a profile"></a>
 
 ## Selected work
 
