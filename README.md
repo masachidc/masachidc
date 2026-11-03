@@ -38,17 +38,3 @@ I eventually shut KESHO down. The product taught me a great deal about building,
 **Built with** Next.js, TypeScript, Supabase, Capacitor.
 
 [Case study](https://masachidc.com/works/kesho-app)
-
-## Other work
-
-**[AMUSE](https://masachidc.com/works/amuse-art-museum)** — A museum discovery and booking experience for Kenya. Research led me away from a native app toward a simpler web experience.
-
-**[Inline](https://masachidc.com/works/inline-chrome-extension)** — A Chrome extension for annotating webpages. I worked on UX in a five-person team. Awarded Most Unique Project at FIU Blackstone LaunchPad Demo Day.
-
-**[Project SEEDS](https://masachidc.com/works/project-seeds-branding)** — A university-approved brand identity and website designed for a program at Florida International University.
-
----
-
-I like working with people who care about both what a product does and how it feels to use.
-
-[See more of my work](https://masachidc.com) · [Get in touch](mailto:hello@masachidc.com)
