@@ -1,6 +1,6 @@
 # Nathan Masachi
 
-**Product designer who ships.**
+## Product designer who ships.
 
 I design products, build them, and put them in people's hands.
 
@@ -12,13 +12,13 @@ Based in San Diego, California.
 
 ## Selected work
 
-<a href="https://masachidc.com/works/tembo-app"><img src="assets/tembo-card.jpg" width="100%" alt="Tembo: three app screens, a Persona, Your Circle and the Home feed"></a>
+<a href="https://masachidc.com/works/tembo-app"><img src="assets/tembo-card.jpg" width="100%" alt="TEMBO: three app screens, a Persona, Your Circle and the Home feed"></a>
 
-### Tembo — A social app built around ongoing experiences
+## TEMBO — A social app built around ongoing experiences
 
-Most social apps are organized around people and posts. Tembo explores what happens when you organize them around ongoing experiences instead.
+Most social apps are organized around people and posts. TEMBO explores what happens when you organize them around ongoing experiences instead.
 
-I founded, designed, and built Tembo. It's live on iOS and Android.
+I founded, designed, and built TEMBO. It's live on iOS and Android.
 
 Beyond the interface, I've worked on everything from the database and media architecture to privacy, performance, testing, and releases.
 
@@ -33,7 +33,7 @@ Beyond the interface, I've worked on everything from the database and media arch
 
 <a href="https://masachidc.com/works/kesho-app"><img src="assets/kesho-card.jpg" width="100%" alt="KESHO: three app screens, a feed of graded predictions, a group leaderboard and a profile"></a>
 
-### KESHO — Call it before kickoff. Prove it after the whistle.
+## KESHO — Call it before kickoff. Prove it after the whistle.
 
 A social prediction app I designed and built for the 2026 World Cup.
 
