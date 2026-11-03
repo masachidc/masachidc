@@ -28,7 +28,7 @@ Beyond the interface, I've worked on everything from the database and media arch
 
 A social prediction app I designed and built for the 2026 World Cup.
 
-I took it from concept to an invite-only beta with 92 participants. One of the biggest lessons came from onboarding: people signed up but didn't know what to do next. After adding guidance directly into the feed, median time to a first prediction dropped from nearly 36 hours to about five minutes.
+I took it from concept to an invite-only beta with 29 active players. One of the biggest lessons came from onboarding: people signed up but didn't know what to do next. After adding guidance directly into the feed, median time to a first prediction dropped from nearly 36 hours to about five minutes.
 
 I eventually shut KESHO down. The product taught me a great deal about building, testing with real people, and knowing when to move on.
 
