@@ -22,9 +22,7 @@ I founded, designed, and built Tembo. It's live on iOS and Android.
 
 Beyond the interface, I've worked on everything from the database and media architecture to privacy, performance, testing, and releases.
 
-<kbd><a href="https://reactnative.dev"><img src="assets/stack/react.svg" height="14" alt=""></a> React Native</kbd> <kbd><a href="https://expo.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/expo-dark.svg"><img src="assets/stack/expo-light.svg" height="14" alt=""></picture></a> Expo</kbd> <kbd><a href="https://www.typescriptlang.org"><img src="assets/stack/typescript.svg" height="14" alt=""></a> TypeScript</kbd> <kbd><a href="https://supabase.com"><img src="assets/stack/supabase.svg" height="14" alt=""></a> Supabase</kbd> <kbd><a href="https://www.cloudflare.com"><img src="assets/stack/cloudflare.svg" height="14" alt=""></a> Cloudflare</kbd>
-
-[Case study](https://masachidc.com/works/tembo-app) · [Website](https://heytembo.com) · [App Store](https://apps.apple.com/us/app/tembo-storylines/id6804888179)
+<kbd><a href="https://reactnative.dev"><img src="assets/stack/react.svg" height="14" alt=""></a> React Native</kbd> <kbd><a href="https://expo.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/expo-dark.svg"><img src="assets/stack/expo-light.svg" height="14" alt=""></picture></a> Expo</kbd> <kbd><a href="https://www.typescriptlang.org"><img src="assets/stack/typescript.svg" height="14" alt=""></a> TypeScript</kbd> <kbd><a href="https://supabase.com"><img src="assets/stack/supabase.svg" height="14" alt=""></a> Supabase</kbd> <kbd><a href="https://www.cloudflare.com"><img src="assets/stack/cloudflare.svg" height="14" alt=""></a> Cloudflare</kbd> &emsp; [Case study](https://masachidc.com/works/tembo-app) · [Website](https://heytembo.com) · [App Store](https://apps.apple.com/us/app/tembo-storylines/id6804888179)
 
 <br>
 
@@ -38,6 +36,4 @@ I took it from concept to an invite-only beta with 29 active players. One of the
 
 I eventually shut KESHO down. The product taught me a great deal about building, testing with real people, and knowing when to move on.
 
-<kbd><a href="https://nextjs.org"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/nextdotjs-dark.svg"><img src="assets/stack/nextdotjs-light.svg" height="14" alt=""></picture></a> Next.js</kbd> <kbd><a href="https://www.typescriptlang.org"><img src="assets/stack/typescript.svg" height="14" alt=""></a> TypeScript</kbd> <kbd><a href="https://supabase.com"><img src="assets/stack/supabase.svg" height="14" alt=""></a> Supabase</kbd> <kbd><a href="https://capacitorjs.com"><img src="assets/stack/capacitor.svg" height="14" alt=""></a> Capacitor</kbd>
-
-[Case study](https://masachidc.com/works/kesho-app)
+<kbd><a href="https://nextjs.org"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/nextdotjs-dark.svg"><img src="assets/stack/nextdotjs-light.svg" height="14" alt=""></picture></a> Next.js</kbd> <kbd><a href="https://www.typescriptlang.org"><img src="assets/stack/typescript.svg" height="14" alt=""></a> TypeScript</kbd> <kbd><a href="https://supabase.com"><img src="assets/stack/supabase.svg" height="14" alt=""></a> Supabase</kbd> <kbd><a href="https://capacitorjs.com"><img src="assets/stack/capacitor.svg" height="14" alt=""></a> Capacitor</kbd> &emsp; [Case study](https://masachidc.com/works/kesho-app)
