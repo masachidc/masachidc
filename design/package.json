@@ -1,0 +1,13 @@
+{
+  "name": "masachidc-profile-assets",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.2.7",
+    "opentype.js": "1.3.4",
+    "sharp": "0.34.5",
+    "simple-icons": "16.0.0",
+    "wawoff2": "2.0.1"
+  }
+}
