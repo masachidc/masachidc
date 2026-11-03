@@ -29,7 +29,7 @@ I founded, designed, and built Tembo. It's live on iOS and Android.
 
 Beyond the interface, I've worked on everything from the database and media architecture to privacy, performance, testing, and releases.
 
-<a href="https://reactnative.dev"><img src="assets/icons/react.svg" height="14" alt=""></a>&nbsp;<samp>React&nbsp;Native</samp> &emsp; <a href="https://expo.dev"><img src="assets/icons/expo.svg" height="14" alt=""></a>&nbsp;<samp>Expo</samp> &emsp; <a href="https://www.typescriptlang.org"><img src="assets/icons/typescript.svg" height="14" alt=""></a>&nbsp;<samp>TypeScript</samp> &emsp; <a href="https://supabase.com"><img src="assets/icons/supabase.svg" height="14" alt=""></a>&nbsp;<samp>Supabase</samp> &emsp; <a href="https://www.cloudflare.com"><img src="assets/icons/cloudflare.svg" height="14" alt=""></a>&nbsp;<samp>Cloudflare</samp>
+<kbd><a href="https://reactnative.dev"><img src="assets/icons/react.svg" height="12" alt=""></a> React Native</kbd> <kbd><a href="https://expo.dev"><img src="assets/icons/expo.svg" height="12" alt=""></a> Expo</kbd> <kbd><a href="https://www.typescriptlang.org"><img src="assets/icons/typescript.svg" height="12" alt=""></a> TypeScript</kbd> <kbd><a href="https://supabase.com"><img src="assets/icons/supabase.svg" height="12" alt=""></a> Supabase</kbd> <kbd><a href="https://www.cloudflare.com"><img src="assets/icons/cloudflare.svg" height="12" alt=""></a> Cloudflare</kbd>
 
 <samp>[Case&nbsp;study](https://masachidc.com/works/tembo-app) / [Website](https://heytembo.com) / [App&nbsp;Store](https://apps.apple.com/us/app/tembo-storylines/id6804888179) / [Google&nbsp;Play](https://play.google.com/store/apps/details?id=com.tembo.app)</samp>
 
@@ -47,7 +47,7 @@ I took it from concept to an invite-only beta with 29 active players. One of the
 
 I eventually shut KESHO down. The product taught me a great deal about building, testing with real people, and knowing when to move on.
 
-<a href="https://nextjs.org"><img src="assets/icons/nextdotjs.svg" height="14" alt=""></a>&nbsp;<samp>Next.js</samp> &emsp; <a href="https://www.typescriptlang.org"><img src="assets/icons/typescript.svg" height="14" alt=""></a>&nbsp;<samp>TypeScript</samp> &emsp; <a href="https://supabase.com"><img src="assets/icons/supabase.svg" height="14" alt=""></a>&nbsp;<samp>Supabase</samp> &emsp; <a href="https://capacitorjs.com"><img src="assets/icons/capacitor.svg" height="14" alt=""></a>&nbsp;<samp>Capacitor</samp>
+<kbd><a href="https://nextjs.org"><img src="assets/icons/nextdotjs.svg" height="12" alt=""></a> Next.js</kbd> <kbd><a href="https://www.typescriptlang.org"><img src="assets/icons/typescript.svg" height="12" alt=""></a> TypeScript</kbd> <kbd><a href="https://supabase.com"><img src="assets/icons/supabase.svg" height="12" alt=""></a> Supabase</kbd> <kbd><a href="https://capacitorjs.com"><img src="assets/icons/capacitor.svg" height="12" alt=""></a> Capacitor</kbd>
 
 <samp>[Case&nbsp;study](https://masachidc.com/works/kesho-app)</samp>
 
