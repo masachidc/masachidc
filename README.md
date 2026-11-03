@@ -18,7 +18,7 @@ Based in San Diego, California.
 
 Most social apps are organized around people and posts. TEMBO explores what happens when you organize them around ongoing experiences instead.
 
-I founded, designed, and built TEMBO. It's live on iOS and Android.
+I defined, designed, developed, and shipped TEMBO to the App Store and Play Store.
 
 Beyond the interface, I've worked on everything from the database and media architecture to privacy, performance, testing, and releases.
 
