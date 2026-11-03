@@ -26,6 +26,8 @@ Beyond the interface, I've worked on everything from the database and media arch
 
 [Case study](https://masachidc.com/works/tembo-app) · [Website](https://heytembo.com) · [App Store](https://apps.apple.com/us/app/tembo-storylines/id6804888179)
 
+<br>
+
 <a href="https://masachidc.com/works/kesho-app"><img src="assets/kesho-card.jpg" width="100%" alt="KESHO: three app screens, a feed of graded predictions, a group leaderboard and a profile"></a>
 
 ### KESHO — Call it before kickoff. Prove it after the whistle.
